@@ -46,9 +46,9 @@
     >
       {# Faremos uma máscara de dinheiro /reais #}
   </div>
-  {{ if product.old_price }}
+  {% if product.old_price %}
     <input type="hidden" name="old_price" value="{{ product.old_price }}">
-  {{ endif }}
+  {% endif %}
 </div>
 
 <div class="item">
@@ -63,7 +63,7 @@
   </div>
 </div>
 
-{{ if product.status }}
+{% if product.status %}
 <div class="item">
   <div>Disponível</div>
   <div>
@@ -91,4 +91,4 @@
     </span>
   </div>
 </div>
-{{ endif }}
+{% endif %}
