@@ -1,9 +1,9 @@
 <div class="item">
-  <div>Catogoria</div>
+  <div>Categoria</div>
   <div>
     <select name="category_id">
-      {% for catogory in categories %}
-      <option value="{{catogory.id}}"
+      {% for category in categories %}
+      <option value="{{category.id}}"
         {% if product.category_id == category.id %} selected {% endif %}>
         {{category.name}}
       </option>
@@ -13,7 +13,7 @@
 </div>
 
 <div class="item">
-  <div>Name</div>
+  <div>Título</div>
   <div>
     <input 
       type="text" 
